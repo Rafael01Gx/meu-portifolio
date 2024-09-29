@@ -1,0 +1,11 @@
+:host{
+img{
+    width: 250px;
+}
+    @media (max-width = 750px) {
+        img{
+            width: 75%;
+        }
+    }
+
+}

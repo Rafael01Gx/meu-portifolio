@@ -1,0 +1,26 @@
+<header>
+    <h2 mat-dialog-title>{{getData()?.title}}</h2>
+    <button (click)="closeModal()">
+        <img src="assets/icons/dialog/close.svg" alt="Botão para fechar o dialog"
+        >
+    </button>
+</header>
+
+<mat-dialog-content>
+    <h3>Projeto</h3>
+
+    <article  [innerHTML]="getData()?.description"></article>
+
+    <nav>
+        @for (item of getData()?.links; track item) {
+            <a [href]="item.href" target="_blank" class="btn btn-primary">
+                {{item.name}}
+            </a>
+        }@empty {
+            <section>
+                <p>Seja bem-vindo à seção de projetos desenvolvidos! Estou constantemente trabalhando em novas e empolgantes criações, e em breve, este espaço será preenchido com diversas soluções inovadoras. Enquanto isso, fique à vontade para explorar as outras seções do meu site e acompanhar minha jornada em busca da excelência no desenvolvimento de software.</p>
+                <p>Volte em breve para conferir as novidades! Obrigado pela sua paciência e interesse.</p>
+            </section>
+        }
+    </nav>
+</mat-dialog-content>

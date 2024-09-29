@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Experiências</h2>
+    @for(item of arrayExperiences(); track item;){
+    <details>
+        <summary>
+            <p>
+                <strong> {{item.summary.strong}}</strong>
+                {{item.summary.p}}
+            </p>
+        </summary>
+        <article [innerHTML]="item.text"></article>
+        <article><ul [innerHTML]="item.ul"></ul></article>
+        <article [innerHTML]="item.text2"></article>
+    </details>
+}
+</div>

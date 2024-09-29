@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Projetos desenvolvidos</h2>
+
+
+  <ul>
+    @for(item of arrayProjects(); track item){
+    <li>
+        <button (click)="openDialog(item)">
+            <img [src]="item.src" [alt]="item.alt" loading="lazy" [attr.width]="item.width" [attr.height]="item.height">
+        </button>
+    </li>
+}@empty {
+  <li>
+  <button (click)="openDialog(null)">
+    <img src="assets/img/projects/vfull.png"
+    alt= "Vida FullStack"
+    width="100px"
+    height="51px"
+    loading="lazy">
+</button>
+</li>
+}
+  </ul>
+
+</div>
