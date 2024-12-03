@@ -91,7 +91,8 @@ export class ProjectsComponent {
     this.#dialog.open(DialogProjectsComponent, {
       data,
       panelClass: EDialogPanelClass.PROJECTS,
-      minWidth: '1200px',
+      minWidth: '70lvw',
+      maxWidth: '95lvw'
     });
   }
 }
