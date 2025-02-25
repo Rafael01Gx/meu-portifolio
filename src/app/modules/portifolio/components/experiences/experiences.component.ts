@@ -44,7 +44,7 @@ export class ExperiencesComponent {
       strong: 'Framework Angular',
       p: 'Est | 2024 - Presente',
     },
-    text: `Minha experiência no desenvolvimento com Angular está focada em compreender e utilizar plenamente o framework Angular18 para criar aplicações robustas e eficientes. Minhas experiências incluem:`,
+    text: `Minha experiência no desenvolvimento com Angular está focada em compreender e utilizar plenamente o framework Angular17+ para criar aplicações robustas e eficientes. Minhas experiências incluem:`,
     ul: `<li>Criar aplicações básicas/intermediárias com o Angular.</li>
         <li>Desenvolver projetos escaláveis no Angular.</li>
         <li>Padronização de projetos Angular de fácil manutenção.</li>
